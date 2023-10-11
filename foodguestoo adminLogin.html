@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Login</title>
+</head>
+<body>
+  <div style="text-align: center; background: beige; background-image: url('/images/foodie hunter.png'); padding: 124px 10px 285px 0px">
+    <h2 style="padding-left: 56px">Admin Login</h2>
+    <form onsubmit="return validateLogin(event)">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div style="padding: 5px">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div style="padding: 5px 0px 8px 48px">
+        <input type="submit" value="Login">
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function validateLogin(event) {
+      event.preventDefault(); // Prevent default form submission
+      
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Validate the credentials
+      if (username === "admin" && password === "password") {
+        window.location.href = "foodguestoAdmin.html"; // Redirect to another webpage
+      } else {
+        alert("Invalid username or password.");
+        return false; // Prevent form submission
+      }
+    }
+  </script>
+</body>
+</html>

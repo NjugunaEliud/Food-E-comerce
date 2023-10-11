@@ -1,0 +1,46 @@
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+.menu{
+    text-align: center;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #ff6b6b;
+}
+
+.menu ul li a:hover
+{
+    color: #ff6b6b;
+
+}
+
+.main-content{
+    margin: 1% 0;
+}
+
+
+.footer{
+    background-color: #ff6b6b;
+    color: white;
+}
